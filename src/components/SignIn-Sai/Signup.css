@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .flex-container {
+    display: flex;
+   
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  .flex-item-left {
+    background-color: #f1f1f1;
+    padding: 10px;
+    flex: 50%;
+  }
+  
+  .flex-item-right {
+    background-color: dodgerblue;
+    padding: 10px;
+    flex: 50%;
+  }
+  
+  
+
+
+
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+    overflow: hidden;
+    }
+    .splitScreen{
+    display: flex;
+    height: 100vh;
+    }
+    .left, .right{
+    width: 50%;
+    }
+    .image{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    }
+    form{
+    margin: 0 30%;
+    height: 100vh;
+    padding-top: 50px;
+    }
+    
+    .image{
+    background: linear-gradient(90deg, #5cc4b7 3%, #9ed4aa);
+    }
+    .logo{
+    margin-top: 60px;
+    width: 50%;
+    }
+    
+    
+    .input-container{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 12px;
+    }
+    input[type=email], input[type=password], input[type=text] {
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 5px;
+    height: 30px;
+    padding: 0 10px;
+    }
+   
+    .button3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+     button{
+    background: #02704A;
+    border: 1px solid #02704A;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+    height: 30px;
+    
+    }
+    .side-content{
+    display: flex;
+    justify-content: center;
+    }
+    .side-content1{
+    display: inline-flex;
+    font-size: 12px;
+    color: rgb(159, 171, 155);
+    cursor: pointer;
+    }
+    .side-content2{
+    color: black;
+    margin-left: 5px;
+    }
+    .img-container{
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    overflow: hidden;
+    width: 50%;
+    height: 100%;
+    }
+  
