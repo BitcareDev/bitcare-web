@@ -8,7 +8,7 @@ const Signup = () => {
 
 return (
 <div class="flex-container">
-  <div class="flex-item-left">
+  <div class="content">
 <form >
 <img src="../assets/logo.png" alt="logo" class="logo"/>
 
@@ -43,7 +43,7 @@ return (
 </div>
 </form>
 </div>
-<div class="flex-item-right">
+<div class="girl-image">
   <div class="fitness-image">
 <img src="../assets/signup-1.png" alt="image" class="image"/>
 </div>

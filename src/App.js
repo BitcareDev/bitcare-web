@@ -7,6 +7,7 @@ import Signin from "./components/SignIn-Sai/Signin.js"
 import Forgot from "./components/SignIn-Sai/Forgot";
 import Signup from "./components/SignIn-Sai/Signup.js";
 
+
 function App() {
   console.log("In app page");
   return (
@@ -17,6 +18,9 @@ function App() {
         <Route exact path="/sai" element={<Signin />} />
         <Route exact path="/forgot" element={<Forgot />} />
         <Route exact path="/signup" element={<Signup />} />
+   
+
+       
         {/* <Route index element={<SignUp />} /> */}
         {/* {/* <Route path="blogs" element={<Blogs />} /> */}
         {/* <Route exact path="/signup" element={<SignUp />} /> */}

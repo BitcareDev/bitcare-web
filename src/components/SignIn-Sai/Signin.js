@@ -7,13 +7,12 @@ import './Signin.css';
 const Signin = () => {
 return (
 <div class="flex-container">
-  <div class="flex-item-left">
+  <div class=" content">
 
   <form >
   <img src="../assets/logo.png" className="logo" />
 <h1>Welcome Back </h1>
 
-<h5>Welcome back please enter the details</h5>
 <div class="input">
 <input type="email" name="username" required placeholder="Email" />
 </div>
@@ -34,7 +33,8 @@ return (
 </form>
 
   </div>
-  <div class="flex-item-right">
+
+  <div class="girl-image">
   <div class="fitness-image">
   <img src="../assets/signup-1.png" className="image" />
 </div>
