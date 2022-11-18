@@ -1,0 +1,36 @@
+.button2
+{
+    margin-left:300px;
+    background-color: #02704A;
+    width:204px;
+    border: 1px solid #02704A;
+    border-radius: 2px;
+    cursor: pointer;
+    color:white;
+margin-top: 12 px;
+}
+
+.fi{
+  margin-top: 12 px;
+
+    margin-top: 1px;
+    margin-left:300px;
+    width:500px;
+    height:30px;
+}
+
+.image3{
+
+  margin-top: -265px;
+      margin-left:700px;
+    width:650px;
+    height:102vh;
+    object-fit: cover;
+  }
+  .logo3{
+    width:200px;
+    height:40px;
+    margin-top: 200px;
+    margin-left:300px;
+
+}
