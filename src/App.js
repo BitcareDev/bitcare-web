@@ -6,7 +6,9 @@ import HomePage from "./pages/HomePage/HomePage";
 import Signin from "./components/SignIn-Sai/Signin.js"
 import Forgot from "./components/SignIn-Sai/Forgot";
 import Signup from "./components/SignIn-Sai/Signup.js";
-
+//import Appointment from "./components/SignIn-Sai/Appointment";
+//import Appoint from "./components/SignIn-Sai/Appoint.js";
+import Booked from "./components/SignIn-Sai/Booked.js";
 
 function App() {
   console.log("In app page");
@@ -18,6 +20,8 @@ function App() {
         <Route exact path="/sai" element={<Signin />} />
         <Route exact path="/forgot" element={<Forgot />} />
         <Route exact path="/signup" element={<Signup />} />
+     
+        <Route exact path="/booked" element={<Booked />} />
    
 
        
