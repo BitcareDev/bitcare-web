@@ -4,7 +4,7 @@ import './password.css';
 
 function For() {
   return (
-    <div class="row">
+    <div class="row-main">
       <div class="info-left">
       <div class="info-form">
           <img src="../../../assets/logo.png" alt="mass" class="bit-logo"/>

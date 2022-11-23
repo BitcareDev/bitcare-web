@@ -5,7 +5,7 @@ import './SignUp.css';
 
 function SignUp() {
   return (
-    <div class="row">
+    <div class="row-main">
       <div class="info-left">
           <div class="info-form">
           <img src='../../../assets/logo.png' alt="logo" class="bit-logo"/>

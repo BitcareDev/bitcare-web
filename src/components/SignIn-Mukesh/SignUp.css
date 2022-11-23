@@ -3,10 +3,10 @@
     padding: 0;
 }
 body{
-    font-family: sans-serif;
+    font-family: Open Sans,sans-serif;
     overflow: hidden;
 }
-.row{
+.row-main{
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);

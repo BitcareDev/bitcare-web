@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Open Sans,sans-serif;
+    overflow: auto;
+}
+.Header{
+    margin-top: 20px;
+    color: rgb(55, 65, 81);
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+.bg-secondary-bg{
+    background-color: rgb(228,240,240);
+    max-height: auto;
+    border-radius: 10px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.bg-location{
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 600px;
+}
+.location-container{
+    display: flex;
+    border: 1px solid rgb(228,240,240);
+    margin: 20px;
+    border-radius: 10px;
+    background-color: rgb(228,240,240);
+    padding: 20px;
+    cursor: pointer;
+    transition: 1s;
+}
+.location-container:hover{
+    background-color: #2f8b88;
+    color: #ffffff;
+}
+.location-disabled{
+    display: flex;
+    border: 1px solid rgb(228,240,240);
+    margin: 20px;
+    border-radius: 10px;
+    background-color: rgb(228,240,240);
+    padding: 20px;
+    cursor: not-allowed;
+}
+.location-text{
+    padding-left: 20px;
+    padding-top: 5px;
+    color: black;
+}
+.location-text1{
+    padding-left: 20px;
+    padding-top: 5px;
+}
+.location-text:hover{
+    color: #ffffff;
+}
+.location-content{
+    display: flex;
+    justify-content: space-between;
+    flex: 1 1 auto;
+}
+.location-image{
+    padding: 20px 10px;
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+.Sub-content, .Sub-text{
+    font-size: 20px;
+    line-height: 28px;
+}
+h3{
+    font-weight: bold; 
+}
+.Right-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-text{
+    font-size: 30px;
+    line-height: 36px;
+    color: black;
+}
+@media (max-width: 987px){
+    .bg-location{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .bg-secondary-bg{
+        padding-top: 20px;
+        height: 100%;
+    }
+    .location-container, .location-disabled{
+        flex-direction: column;
+    }
+    .location-image{
+        text-align: center;
+    }
+    .location-text{
+        padding-left: 0px;
+    }
+    .location-text1{
+        padding-left: 0px;
+    }
+}
+@media (max-width: 600px){
+    .Sub-text{
+        display:inline-block;
+        width:180px;
+        white-space: nowrap;
+        overflow:hidden !important;
+        text-overflow: ellipsis;
+    }
+    .Sub-text:hover{
+        text-overflow: clip;
+        white-space: normal;
+        word-break: break-all;
+    }
+    
+}

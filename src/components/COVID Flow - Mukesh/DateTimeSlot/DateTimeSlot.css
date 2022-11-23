@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Open Sans,sans-serif;
+    overflow: auto;
+}
+.header{
+    margin-top: 20px;
+    color: rgb(55, 65, 81);
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+.bg-datetime{
+    background-color: rgb(228,240,240);
+    height: 100%;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.bg-slot{
+    display: flex;
+    justify-content: center;
+}
+.bg-date{
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 600px;
+}
+.date-text{
+    padding: 20px 20px 0px 20px;
+    font-size: 16px;
+}
+input[type=date]{
+    width: 100%;
+    border: none;
+    padding: 0px 35px;
+    border-bottom: 1px solid black;
+    font-size: 20px;
+}
+.g-4, .gy-4 {
+    padding: 25px 10px 25px 10px;
+}
+.btn-time{
+    padding: 13px 0px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(228,240,240);
+}
+.btn-time:hover{
+    background-color: #2f8b88;
+    color: #ffffff;
+}
+button#time:focus{
+    background-color: #2f8b88;
+    color: #ffffff;
+}
+.btn-next{
+    padding: 20px 30px 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.next{
+    padding: 10px 20px;
+    background-color: #2f8b88;
+    color: #ffffff;
+    border: none;
+}
+.btn-back{
+    border: 1px solid black;
+    cursor: pointer;
+}
