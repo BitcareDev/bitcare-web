@@ -1,0 +1,121 @@
+.auto {
+  display: block;
+padding-bottom: 100px;
+  width: 700px;
+  height: 250px;
+background-color: white;
+border-radius: 10px;
+  margin-left: 20px;
+
+
+}
+
+.firstbg {
+  background-color: #E4F0F0;
+  flex: auto;
+  width: 70%;
+  margin: auto;
+  height:500px;
+  margin-top: 30px;
+  border-radius: 10px;
+  
+}
+.firsth p {
+  font-size: 24px;
+  margin-left: 20px;}
+
+
+.secondh p {
+  font-size: 24px;
+margin-left: 20px;
+}
+.firstip{
+  margin-left:20px;
+  width:50%;
+  height: 70%;
+}
+button{
+  background-color:    #2f8b88;
+  color: white;
+  width: 90px;
+  height: 40px;
+margin-left: 500px;
+margin-top: 10px;
+}
+
+.btn-next{
+  display: flex;
+  align-items: center;
+  justify-content: right;
+padding:20px;
+
+
+}
+
+
+@media screen and (max-width: 800px) {
+  .firstbg {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+    
+  }
+  .auto{
+    width: 90%; 
+  
+  }
+  
+}
+
+@media only screen and (max-width: 306px) {
+}
+.thirdbg:hover{
+                  background-color:#2f8b88;
+                                    color: white;
+
+  
+}
+.main{
+
+    margin-left: 20px;
+    font-size: 16px;
+    height: 2vh;
+    width: 100%;
+
+}
+
+.main:hover{
+  background-color: #2f8b88;
+  color: #fff;
+}
+
+
+.thirdbg{
+    border: 1px solid #fff;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #E4F0F0;
+    padding: 2px;
+    width:40%;
+    margin-left: 25px;
+    margin-right: 30px;
+    cursor: pointer;
+    flex-direction: row;
+
+}
+
+            @media screen and (max-width: 700px){
+            .rowcl{
+              margin-left: 15px;
+            }
+            .rac{
+              margin-left: 40px;
+            }
+           .thirdbg {
+          flex:100%;
+            flex-direction: column;
+
+
+            }
+          }
