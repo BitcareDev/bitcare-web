@@ -52,7 +52,7 @@ body{
     padding-left: 20px;
 }
 @media (max-width: 768px){
-    .row{
+    .row-main{
         width: 100%;
         grid-template-columns: 1fr;
     }

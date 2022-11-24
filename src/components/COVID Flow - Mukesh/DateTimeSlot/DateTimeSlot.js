@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { FaArrowRight } from 'react-icons/fa';
 import { FaArrowLeft } from 'react-icons/fa';
 import {useNavigate} from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 function DateTime(){
     const navigate = useNavigate();
@@ -16,7 +17,6 @@ function DateTime(){
             <div className="bg-datetime">
             <div className="bg-slot">
                 <div className="bg-date">
-                    <div className="date-container">
                         <h2 className='date-text'>Select a date</h2>
                         <input type="date" id="birthday" name="birthday"/>
                         <div class="row gy-4 row-cols-2 row-cols-sm-2 row-cols-md-2 row-cols-lg-3">
@@ -66,11 +66,10 @@ function DateTime(){
                             <button type="button" className="btn-time" id="time">5:00 AM</button>
                         </div>
                         </div>
-                    </div>
                 </div>
             </div>
             <div className="btn-next">
-                <button className="next">Next <FaArrowRight/></button>
+            <NavLink to="/symptoms"><button className="next">Next <FaArrowRight/></button></NavLink>
             </div>
             </div>
         </div>

@@ -8,6 +8,7 @@ import For from "./components/SignIn-Mukesh/password";
 import SignUp from "./components/SignIn-Mukesh/SignUp";
 import Location from "./components/COVID Flow - Mukesh/LocationPage/LocationPage";
 import DateTime from "./components/COVID Flow - Mukesh/DateTimeSlot/DateTimeSlot";
+import Symptoms from "./components/COVID Flow - Mukesh/Symptoms/Symptoms";
 
 function App() {
   console.log("In app page");
@@ -21,6 +22,7 @@ function App() {
         <Route exact path="/signup" element={<SignUp/>} />
         <Route exact path="/location" element={<Location/>} />
         <Route exact path="/datetime" element={<DateTime/>} />
+        <Route exact path="/symptoms" element={<Symptoms/>} />
         {/* <Route index element={<SignUp />} /> */}
         {/* {/* <Route path="blogs" element={<Blogs />} /> */}
         {/* <Route exact path="/signup" element={<SignUp />} /> */}

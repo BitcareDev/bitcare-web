@@ -38,6 +38,7 @@ body{
     padding: 20px;
     cursor: pointer;
     transition: 1s;
+    color: black;
 }
 .location-container:hover{
     background-color: #2f8b88;
@@ -55,14 +56,10 @@ body{
 .location-text{
     padding-left: 20px;
     padding-top: 5px;
-    color: black;
 }
 .location-text1{
     padding-left: 20px;
     padding-top: 5px;
-}
-.location-text:hover{
-    color: #ffffff;
 }
 .location-content{
     display: flex;
@@ -126,6 +123,5 @@ h3{
         text-overflow: clip;
         white-space: normal;
         word-break: break-all;
-    }
-    
+    }  
 }
