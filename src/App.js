@@ -8,7 +8,8 @@ import Forgot from "./components/SignIn-Sai/Forgot";
 import Signup from "./components/SignIn-Sai/Signup.js";
 //import Appointment from "./components/SignIn-Sai/Appointment";
 //import Appoint from "./components/SignIn-Sai/Appoint.js";
-import Booked from "./components/SignIn-Sai/Booked.js";
+import Booked from "./components/AppointmentBooked-Sai/Booked.js";
+import AppointmentDetails from "./components/AppointmentDetails-Sai/AppointmentDetails.js";
 
 function App() {
   console.log("In app page");
@@ -22,6 +23,7 @@ function App() {
         <Route exact path="/signup" element={<Signup />} />
      
         <Route exact path="/booked" element={<Booked />} />
+        <Route exact path="/details" element={<AppointmentDetails />} />
    
 
        

@@ -9,8 +9,7 @@ function Booked() {
             <div class="main">
                 <header class="header">
 
-                    <h2>Friday, 8:30AM</h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <h2>Friday, 8:30AM</h2>&nbsp;&nbsp;
                     <h2>Dec 30</h2>
                 </header>
 
@@ -23,11 +22,11 @@ function Booked() {
                     <h2>Annual Physical</h2>
                     <h3>Dr.Victoria</h3>
 
-                    
+
                     <h5>texas</h5>        </div>
 
                 <footer class="footer">
-                    <button class="button5">Show Details</button>
+                    <NavLink to='/details'><button class="button5">Show Details</button></NavLink>
                 </footer>
 
 
@@ -38,7 +37,7 @@ function Booked() {
             <div class="main2">
                 <header class="header2">
 
-                    <h2>Saturday, 10:30AM</h2>
+                    <h2>Saturday, 10:30AM</h2>&nbsp;&nbsp;
                     <h2>Dec 10</h2>
 
 
@@ -54,7 +53,7 @@ function Booked() {
                     <h2>Annual Physical</h2>
                     <h3>Dr.Lauren</h3>
 
-                    
+
                     <h5>Hensley</h5>        </div>
 
                 <footer class="footer2">
@@ -68,11 +67,11 @@ function Booked() {
             <div class="main3">
                 <header class="header3">
 
-                    <h2>Friday, 8:30AM</h2>
+                    <h2>Friday, 8:30AM</h2>&nbsp;&nbsp;
                     <h2>Dec 30</h2>
+                    <br></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <button class="button3">Passed</button>
-
-
                 </header>
 
 
@@ -81,7 +80,7 @@ function Booked() {
                     <h2>Annual Physical</h2>
                     <h3>Dr.Victoria</h3>
 
-                   
+
                     <h5>texas</h5>        </div>
 
                 <footer class="footer3">
@@ -96,8 +95,11 @@ function Booked() {
             <div class="main4">
                 <header class="header4">
 
-                    <h2>Friday, 8:30AM</h2>
-                    <h2>Dec 30</h2>
+                    <h2>Friday, 8:30AM</h2>&nbsp;&nbsp;
+                    <h2>Dec 30</h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;
                     <button class="button4">Cancelled</button>
 
 
@@ -107,7 +109,7 @@ function Booked() {
                     <h2>Annual Physical</h2>
                     <h3>Dr.Victoria</h3>
 
-                
+
                     <h5>texas</h5>        </div>
 
                 <footer class="footer4">

@@ -25,7 +25,8 @@ body {
   color: white;
   border-radius: 12px;
   display: inline-flex;
-  justify-content: center;
+
+  justify-content: left;
   margin: auto;
   width: 100%;
 }
@@ -108,15 +109,16 @@ button {
 
 .header2 {
 
-  padding: 0px 10px;
+  padding: 10px 10px;
   text-align: left;
   background: #02704A;
   color: white;
   border-radius: 12px;
-
-  justify-content: center;
+  display: inline-flex;
+  width: 100%;
+  justify-content: left;
   margin: auto;
-  color: black;
+
 }
 
 .header2 h1 {
@@ -133,7 +135,7 @@ button {
 
 .image2 {
   text-align: right;
-margin-top: 20px;
+  margin-top: 20px;
 
 }
 
@@ -202,13 +204,14 @@ button {
 
 .header3 {
 
-  padding: 0px 10px;
+  padding: 10px 10px;
   text-align: left;
   background: whitesmoke;
-  color: white;
-  border-radius: 12px;
 
-  justify-content: center;
+  border-radius: 12px;
+  display: inline-flex;
+  width: 100%;
+  justify-content: left;
   margin: auto;
   color: black;
 }
@@ -227,11 +230,11 @@ button {
 
 
 .button3 {
-  background-color: yellow;
+  background-color: #2f8b88;
   color: black;
   width: 20%;
-  margin-top: -20px;
-  border-color: yellow;
+  margin-top: -5px;
+  border-color: #2f8b88;
 }
 
 
@@ -291,13 +294,14 @@ button {
 
 .header4 {
 
-  padding: 0px 10px;
+  padding: 10px 10px;
   text-align: left;
   background: whitesmoke;
-  color: white;
-  border-radius: 12px;
 
-  justify-content: center;
+  border-radius: 12px;
+  display: inline-flex;
+  width: 100%;
+  justify-content: left;
   margin: auto;
   color: black;
 }
@@ -316,14 +320,15 @@ button {
 
 
 .button4 {
-  background-color: grey;
+  background-color: #2f8b88;
   color: black;
   width: 20%;
-  margin-top: -20px;
-  border-color: grey;
-
+  margin-top: -5px;
+  border-color: #2f8b88;
+  justify-content: right;
 
 }
+
 .main4 {
 
   background-color: #E4F0F0;
@@ -331,6 +336,7 @@ button {
   padding: 10px;
 
 }
+
 .main4 .details4 {
   margin: auto;
   margin-top: 10px;
@@ -394,12 +400,11 @@ button {
 
   }
 
+
   .main .details {
     width: 100%;
     display: flex;
     flex-direction: column;
-
-
 
   }
 
