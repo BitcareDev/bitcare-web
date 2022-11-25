@@ -4,6 +4,8 @@ import { FaDirections } from "react-icons/fa";
 
 function AppointmentDetails() {
     return(
+
+        
         <div class="heading">
         <h1>Appointment Details</h1>
         <div class="full_details"><br></br>
@@ -42,7 +44,7 @@ function AppointmentDetails() {
                
                 <input type="button" value="Reschedule Appointment" />
                 &nbsp;&nbsp;&nbsp;&nbsp;
-                <input type="button" value="Cancel Appointment" />
+                <input type="button" value="Cancel Appointment"  />
 
                 <br></br>
                 <br></br>

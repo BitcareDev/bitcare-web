@@ -23,7 +23,7 @@ function Booked() {
                     <h3>Dr.Victoria</h3>
 
 
-                    <h5>texas</h5>        </div>
+                    <h5>Texas</h5>        </div>
 
                 <footer class="footer">
                     <NavLink to='/details'><button class="button5">Show Details</button></NavLink>
@@ -68,20 +68,20 @@ function Booked() {
                 <header class="header3">
 
                     <h2>Friday, 8:30AM</h2>&nbsp;&nbsp;
-                    <h2>Dec 30</h2>
-                    <br></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <button class="button3">Passed</button>
+                    <h2>Nov 11</h2>
+                    
+                   
                 </header>
+                <h3>Passed</h3>
 
 
                 <div class="details3">
-                    <h1>Primary Care Visit</h1>
-                    <h2>Annual Physical</h2>
-                    <h3>Dr.Victoria</h3>
+                    <h1>COVID-19 Testing</h1>
+                    <h2>COVID-19 Screening</h2>
+                    <h3></h3>
 
 
-                    <h5>texas</h5>        </div>
+                    <h5>Texas</h5>        </div>
 
                 <footer class="footer3">
                     <button class="button6">Show Details</button>&nbsp;&nbsp;&nbsp;&nbsp;
@@ -96,21 +96,19 @@ function Booked() {
                 <header class="header4">
 
                     <h2>Friday, 8:30AM</h2>&nbsp;&nbsp;
-                    <h2>Dec 30</h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    &nbsp;&nbsp;&nbsp;&nbsp;
-                    <button class="button4">Cancelled</button>
+                    <h2>Oct 30</h2>
+                    </header>
+                   <h3>Cancelled</h3>
 
 
-                </header>
+                
                 <div class="details4">
-                    <h1>Primary Care Visit</h1>
-                    <h2>Annual Physical</h2>
-                    <h3>Dr.Victoria</h3>
+                    <h1>COVID-19 Test</h1>
+                    <h2>COVID-19 Screening</h2>
+                    <h3></h3>
 
 
-                    <h5>texas</h5>        </div>
+                    <h5>Texas</h5>        </div>
 
                 <footer class="footer4">
                     <button class="button8">Show Details</button>&nbsp;&nbsp;&nbsp;&nbsp;

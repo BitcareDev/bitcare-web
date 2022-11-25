@@ -3,13 +3,14 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SignInPage from "./pages/SignInPage/SIgnInPage";
 import HomePage from "./pages/HomePage/HomePage";
-import Signin from "./components/SignIn-Sai/Signin.js"
-import Forgot from "./components/SignIn-Sai/Forgot";
-import Signup from "./components/SignIn-Sai/Signup.js";
+import Signin from "./components/Sai/SignIn-Sai/Signin.js"
+import Forgot from "./components/Sai/SignIn-Sai/Forgot";
+import Signup from "./components/Sai/SignIn-Sai/Signup.js";
 //import Appointment from "./components/SignIn-Sai/Appointment";
 //import Appoint from "./components/SignIn-Sai/Appoint.js";
-import Booked from "./components/AppointmentBooked-Sai/Booked.js";
-import AppointmentDetails from "./components/AppointmentDetails-Sai/AppointmentDetails.js";
+import Booked from "./components/Sai/AppointmentBooked-Sai/Booked.js";
+import AppointmentDetails from "./components/Sai/AppointmentDetails-Sai/AppointmentDetails.js";
+import ModalInFunctionalComponent from "./components/Sai/CancelAppointment-Sai/CancelAppointment.js";
 
 function App() {
   console.log("In app page");
@@ -24,6 +25,7 @@ function App() {
      
         <Route exact path="/booked" element={<Booked />} />
         <Route exact path="/details" element={<AppointmentDetails />} />
+        <Route exact path="/cancel" element={<ModalInFunctionalComponent />} />
    
 
        

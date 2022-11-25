@@ -4,7 +4,7 @@
 
 
 body {
-  font-family: Arial;
+  font-family: Open Sans,sans-serif;
   margin: 0;
 }
 
@@ -12,7 +12,7 @@ body {
 
   width: 30%;
   margin: auto;
-  margin-top: 20px;
+  
 }
 
 
@@ -61,14 +61,14 @@ body {
 
 .main .Victoria {
   border-radius: 100px;
-  height: 100px;
-  width: 100px;
+  height: 80px;
+  width: 80px;
 }
 
 
 .main .details {
   margin: auto;
-  margin-top: -100px;
+  margin-top: -70px;
 }
 
 
@@ -150,15 +150,15 @@ button {
 
 .main2 .Lauren2 {
   border-radius: 100px;
-  height: 100px;
-  width: 100px;
+  height: 80px;
+  width: 80px;
 
 }
 
 
 .main2 .details2 {
   margin: auto;
-  margin-top: -100px;
+  margin-top: -70px;
 }
 
 
@@ -224,18 +224,15 @@ button {
 
 
 .header3 h3 {
-  font-size: 26px;
-
-}
-
-
-.button3 {
+  font-size: 16px;
   background-color: #2f8b88;
-  color: black;
-  width: 20%;
-  margin-top: -5px;
-  border-color: #2f8b88;
+height:24px;
+border-radius: 10px;
+width: 75px;
+text-align: center;
 }
+
+
 
 
 .main3 {
@@ -314,20 +311,16 @@ button {
 
 
 .header4 h3 {
-  font-size: 26px;
-
-}
-
-
-.button4 {
+  font-size: 20px;
   background-color: #2f8b88;
-  color: black;
-  width: 20%;
-  margin-top: -5px;
-  border-color: #2f8b88;
-  justify-content: right;
+  height: 25px;
+  width:95px;
+  border-radius: 10px;
+text-align: center;
 
 }
+
+
 
 .main4 {
 
@@ -382,15 +375,15 @@ button {
 
 
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
 
   .abcd {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 90%;
 
   }
-
+ 
   .navbar {
     flex-direction: column;
   }
@@ -417,22 +410,55 @@ button {
     width: 50%;
     text-align: center;
   }
-
-  .button3,
-  .button4 {
-    width: 40%;
-    text-align: center;
-  }
-
+.button5{
+  width:170%;
+  text-align: center;
+}
+ 
   .button6,
   .button7 {
-    width: 40%;
+    width: 60%;
     text-align: center;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
   }
 
   .button8,
   .button9 {
-    width: 40%;
+    width: 60%;
     text-align: center;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
   }
+
+  .Victoria{
+    max-width: 100%;
+  height: auto;
+  }
+
+.image{
+    display: flex;
+    padding-bottom: 50px;
+
+}
+.details{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.image2{
+  display: flex;
+  padding-bottom: 50px;
+
+}
+.details2{
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  
+}
 }
