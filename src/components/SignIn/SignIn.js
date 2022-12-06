@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./SignIn.css";
+import "./Signin.css";
 import { useNavigate } from "react-router-dom";
 import { collection, addDoc, getDocs } from "firebase/firestore";
 import { db } from "../../index";
