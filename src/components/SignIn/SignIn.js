@@ -1,13 +1,15 @@
 import React, { useState } from "react";
 import "./SignIn.css";
 import { useNavigate } from "react-router-dom";
+import { collection, addDoc, getDocs } from "firebase/firestore";
+import { db } from "../../index";
 
 export default function SignIn(props) {
   const navigate = useNavigate();
   const { setNewUser } = props;
   const [uname, setUname] = useState("");
   const [password, setPassword] = useState("");
-  const [errorMessages, setErrorMessages] = useState({});
+  const [errorMessages, setErrorMessages] = useState("");
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isForgot, setForgot] = useState(false);
   // User Login info
@@ -27,28 +29,40 @@ export default function SignIn(props) {
     pass: "invalid password",
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
+    // console.log("Username", uname);
+    // console.log("password", password);
     //Prevent page reload
     event.preventDefault();
+    const querySnapshot = await getDocs(collection(db, "users"));
+    querySnapshot.forEach((doc) => {
+      // doc.data() is never undefined for query doc snapshots
+      console.log("Doc data: ", doc.data());
+      if (doc.data().email === uname && doc.data().password === password) {
+        console.log("valid credentials");
+        setErrorMessages("");
+        navigate("home");
+      } else setErrorMessages("Invalid username or password");
+    });
 
     // var { uname, pass } = document.forms[0];
 
     // Find user login info
-    const userData = database.find((user) => user.username === uname);
+    // const userData = database.find((user) => user.username === uname);
 
     // Compare user info
-    if (userData) {
-      if (userData.password !== password) {
-        // Invalid password
-        setErrorMessages({ name: "pass", message: errors.pass });
-      } else {
-        // setIsSubmitted(true);
-        navigate("home");
-      }
-    } else {
-      // Username not found
-      setErrorMessages({ name: "uname", message: errors.uname });
-    }
+    // if (userData) {
+    //   if (userData.password !== password) {
+    //     // Invalid password
+    //     setErrorMessages({ name: "pass", message: errors.pass });
+    //   } else {
+    //     // setIsSubmitted(true);
+    //     navigate("home");
+    //   }
+    // } else {
+    //   // Username not found
+    //   setErrorMessages({ name: "uname", message: errors.uname });
+    // }
   };
   const renderErrorMessage = (name) =>
     name === errorMessages.name && (
@@ -66,6 +80,11 @@ export default function SignIn(props) {
           <div className="subHeader">
             Welcome back! Please enter your details
           </div>
+          {errorMessages && errorMessages !== "" ? (
+            <div className="error">{errorMessages}</div>
+          ) : (
+            ""
+          )}
           <div className="input-container">
             <input
               type="email"
@@ -75,7 +94,7 @@ export default function SignIn(props) {
               placeholder="Email"
               onChange={(e) => setUname(e.target.value)}
             />
-            {renderErrorMessage("uname")}
+            {/* {renderErrorMessage("uname")} */}
           </div>
           <div className="input-container">
             <input
@@ -86,7 +105,7 @@ export default function SignIn(props) {
               placeholder="Password"
               onChange={(e) => setPassword(e.target.value)}
             />
-            {renderErrorMessage("pass")}
+            {/* {renderErrorMessage("pass")} */}
           </div>
           <div>
             <a
