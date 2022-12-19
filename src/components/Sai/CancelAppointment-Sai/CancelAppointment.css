@@ -1,45 +1,64 @@
-body{
-    font-family: Open Sans,sans-serif;
+body {
+    font-family: Open Sans, sans-serif;
     padding: 50px;
 }
-.reason_for_cancel{
+
+.reason_for_cancel {
     background-color: #E4F0F0;
-    width:40%;
+    width: 40%;
     border-radius: 12px;
     margin: auto;
     padding-bottom: 20px;
 }
-.reason h1{
+
+.reason h1 {
     font-size: 20px;
     color: #02704A;
     text-align: center;
     padding-top: 30px;
 }
-.reasons{
+
+.reasons {
     padding-left: 140px;
 }
 
-.button20{
+.aa {
+    margin-left: 200px;
+
+}
+
+.button20 {
     background-color: #E4F0F0;
     border-radius: 10px;
     border-color: #E4F0F0;
     text-align: center;
- 
-    
+
 }
 
-@media screen and (max-width: 768px ){
-    .reason_for_cancel{
-        width:100%;
+.text {
+    height: 200px;
+    width: 200px;
+}
+
+@media screen and (max-width: 768px) {
+    .reason_for_cancel {
+        width: 100%;
         display: flex;
         flex-direction: column;
         margin: auto;
     }
-    .reasons{
+
+    .reasons {
         padding-left: 30px;
     }
-    .button20{
-        width:40%;
+
+    .text {
+        width: 30%;
+        text-align: center;
+    }
+
+    .button20 {
+        width: 40%;
         text-align: center;
     }
 }

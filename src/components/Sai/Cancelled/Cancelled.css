@@ -1,0 +1,26 @@
+.cancelled_heading {
+    background-color: #E4F0f0;
+    width: 50%;
+    margin: auto;
+    padding-left: 50px;
+    border-radius: 12px;
+}
+
+.cancelled_heading .name,
+.test,
+.date,
+.service,
+.location,
+.status {
+    font-size: 26px;
+}
+
+.cancelled_heading .status {
+    color: red;
+    text-align: center;
+}
+
+.cancelled_heading .ad {
+    text-align: center;
+    color: black;
+}

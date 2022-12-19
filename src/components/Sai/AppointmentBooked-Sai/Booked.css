@@ -4,7 +4,7 @@
 
 
 body {
-  font-family: Open Sans,sans-serif;
+  font-family: Open Sans, sans-serif;
   margin: 0;
 }
 
@@ -12,10 +12,12 @@ body {
 
   width: 30%;
   margin: auto;
-  
+
 }
 
-
+.heading_style {
+  text-align: center;
+}
 
 .header {
 
@@ -24,29 +26,28 @@ body {
   background: #02704A;
   color: white;
   border-radius: 12px;
-  display: inline-flex;
+
 
   justify-content: left;
   margin: auto;
   width: 100%;
 }
 
-.header h2 {
+.header .ss {
+  background-color: #E4F0F0;
+  color: black;
 
-  font-size: 26px;
-
-}
-
-
-
-.header h3 {
-  font-size: 26px;
 
 }
 
 .image {
-  text-align: right;
-  margin-top: 20px;
+
+  margin-left: auto;
+  width: 50%;
+  height: 80px;
+  width: 80px;
+  border-radius: 12px;
+
 }
 
 
@@ -57,9 +58,10 @@ body {
   border-radius: 12px;
   padding: 10px;
 
+
 }
 
-.main .Victoria {
+.Victoria {
   border-radius: 100px;
   height: 80px;
   width: 80px;
@@ -100,277 +102,10 @@ body {
 
 }
 
-button {
-  width: 30%;
-  text-align: center;
-}
-
-
-
-.header2 {
-
-  padding: 10px 10px;
-  text-align: left;
-  background: #02704A;
-  color: white;
-  border-radius: 12px;
-  display: inline-flex;
-  width: 100%;
-  justify-content: left;
-  margin: auto;
-
-}
-
-.header2 h1 {
-
-  font-size: 16px;
-}
-
-
-
-.header2 h3 {
-  font-size: 26px;
-
-}
-
-.image2 {
-  text-align: right;
-  margin-top: 20px;
-
-}
-
-
-.main2 {
-
-  background-color: #E4F0F0;
-  border-radius: 12px;
-  padding: 10px;
-
-}
-
-.main2 .Lauren2 {
-  border-radius: 100px;
-  height: 80px;
-  width: 80px;
-
-}
-
-
-.main2 .details2 {
-  margin: auto;
-  margin-top: -70px;
-}
-
-
-.main2 h1 {
-  color: #02704A;
-  font-size: 20px;
-
-}
-
-.main2 h2 {
-
-  font-size: 20px;
-
-}
-
-.main2 h3 {
-
-  font-size: 20px;
-}
-
-.main2 h5 {
-
-  font-size: 20px;
-}
-
-
-.footer2 {
-
-  text-align: center;
-  background-color: #E4F0F0;
-
-  margin: auto;
-  text-align: left;
-
-}
 
 button {
   width: 30%;
   text-align: center;
-}
-
-
-
-.header3 {
-
-  padding: 10px 10px;
-  text-align: left;
-  background: whitesmoke;
-
-  border-radius: 12px;
-  display: inline-flex;
-  width: 100%;
-  justify-content: left;
-  margin: auto;
-  color: black;
-}
-
-.header3 h1 {
-
-  font-size: 16px;
-}
-
-
-
-.header3 h3 {
-  font-size: 16px;
-  background-color: #2f8b88;
-height:24px;
-border-radius: 10px;
-width: 75px;
-text-align: center;
-}
-
-
-
-
-.main3 {
-
-  background-color: #E4F0F0;
-  border-radius: 12px;
-  padding: 10px;
-
-}
-
-
-
-.main3 .details3 {
-  margin: auto;
-  margin-top: 10px;
-}
-
-
-.main3 h1 {
-  color: #02704A;
-  font-size: 20px;
-}
-
-.main3 h2 {
-
-  font-size: 20px;
-}
-
-.main3 h3 {
-
-  font-size: 20px;
-}
-
-.main3 h5 {
-
-  font-size: 20px;
-}
-
-
-.footer3 {
-
-  text-align: center;
-  background-color: #E4F0F0;
-
-  margin: auto;
-  text-align: left;
-
-}
-
-button {
-  width: 30%;
-  text-align: center;
-}
-
-
-
-.header4 {
-
-  padding: 10px 10px;
-  text-align: left;
-  background: whitesmoke;
-
-  border-radius: 12px;
-  display: inline-flex;
-  width: 100%;
-  justify-content: left;
-  margin: auto;
-  color: black;
-}
-
-.header4 h1 {
-
-  font-size: 16px;
-}
-
-
-
-.header4 h3 {
-  font-size: 20px;
-  background-color: #2f8b88;
-  height: 25px;
-  width:95px;
-  border-radius: 10px;
-text-align: center;
-
-}
-
-
-
-.main4 {
-
-  background-color: #E4F0F0;
-  border-radius: 12px;
-  padding: 10px;
-
-}
-
-.main4 .details4 {
-  margin: auto;
-  margin-top: 10px;
-}
-
-
-.main4 h1 {
-  color: #02704A;
-  font-size: 20px;
-}
-
-.main4 h2 {
-
-  font-size: 20px;
-}
-
-.main4 h3 {
-
-  font-size: 20px;
-}
-
-.main4 h5 {
-
-  font-size: 20px;
-}
-
-
-.footer4 {
-
-  text-align: center;
-  background-color: #E4F0F0;
-
-  margin: auto;
-  text-align: left;
-
-}
-
-button {
-  width: 30%;
-  text-align: center;
-
 }
 
 
@@ -380,13 +115,11 @@ button {
   .abcd {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 95%;
 
   }
- 
-  .navbar {
-    flex-direction: column;
-  }
+
+
 
   .header {
     width: 100%;
@@ -407,58 +140,44 @@ button {
   }
 
   button {
-    width: 50%;
+    width: 100%;
     text-align: center;
-  }
-.button5{
-  width:170%;
-  text-align: center;
-}
- 
-  .button6,
-  .button7 {
-    width: 60%;
-    text-align: center;
-    padding-bottom: 10px;
-    display: flex;
-    flex-direction: column;
   }
 
-  .button8,
-  .button9 {
-    width: 60%;
-    text-align: center;
-    padding-bottom: 10px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .Victoria{
+  .Victoria {
     max-width: 100%;
-  height: auto;
+
   }
 
-.image{
+  .image {
     display: flex;
-    padding-bottom: 50px;
+    flex-direction: row;
 
-}
-.details{
-    padding-top: 20px;
+  }
+
+  .details {
+    padding-top: 10px;
     display: flex;
     flex-direction: column;
-    
-}
 
-.image2{
-  display: flex;
-  padding-bottom: 50px;
+  }
+
 
 }
-.details2{
-  padding-top: 20px;
-  display: flex;
-  flex-direction: column;
-  
-}
+
+@media screen and (max-width: 320px) {
+  .image {
+
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+
+  }
+
+  .details {
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+
+  }
 }

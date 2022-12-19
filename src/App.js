@@ -10,7 +10,15 @@ import Signup from "./components/Sai/SignIn-Sai/Signup.js";
 //import Appoint from "./components/SignIn-Sai/Appoint.js";
 import Booked from "./components/Sai/AppointmentBooked-Sai/Booked.js";
 import AppointmentDetails from "./components/Sai/AppointmentDetails-Sai/AppointmentDetails.js";
-import ModalInFunctionalComponent from "./components/Sai/CancelAppointment-Sai/CancelAppointment.js";
+import Reshedule from "./components/Sai/Reshedule/ResheduleAppointment";
+import AppointmentDetailsLauren from "./components/Sai/AppointmentDetails2.js/AppointmentDetailsLauren";
+import Passed from "./components/Sai/Passed/passed";
+import Cancelled from "./components/Sai/Cancelled/Cancelled";
+import CancelAppointment from "./components/Sai/CancelAppointment-Sai/CancelAppointment.js";
+
+// import Abcd from "./components/Sai/abcd";
+// import Hello from "./components/Sai/Demo";
+
 
 function App() {
   console.log("In app page");
@@ -22,20 +30,23 @@ function App() {
         <Route exact path="/sai" element={<Signin />} />
         <Route exact path="/forgot" element={<Forgot />} />
         <Route exact path="/signup" element={<Signup />} />
-     
+
         <Route exact path="/booked" element={<Booked />} />
         <Route exact path="/details" element={<AppointmentDetails />} />
-        <Route exact path="/cancel" element={<ModalInFunctionalComponent />} />
-   
+        <Route exact path="/details2" element={<AppointmentDetailsLauren />} />
+        <Route exact path="/cancel" element={<CancelAppointment />} />
 
-       
+        <Route exact path="/reshedule" element={<Reshedule />} />
+        <Route exact path="/passed" element={<Passed />} />
+        <Route exact path="/cancelled" element={<Cancelled />} />
+
         {/* <Route index element={<SignUp />} /> */}
         {/* {/* <Route path="blogs" element={<Blogs />} /> */}
         {/* <Route exact path="/signup" element={<SignUp />} /> */}
         {/* <Route exact path="*" element={<SignUp />} /> */}
       </Routes>
     </BrowserRouter>
-    
+
   );
 }
 

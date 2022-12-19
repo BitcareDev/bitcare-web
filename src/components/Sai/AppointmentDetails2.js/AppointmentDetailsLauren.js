@@ -1,10 +1,10 @@
 import React from "react";
-import './AppointmentDetails.css';
-import AppointmentData from "./AppointmentData";
+import './AppointmentDetailsLauren.css';
+import AppointmentDataLauren from "./AppointmentDataLauren";
 import Sdata1 from "../../Sdata1";
 
 
-function AppointmentDetails() {
+function AppointmentDetailsLauren() {
   return (
 
     <React.Fragment>
@@ -12,11 +12,10 @@ function AppointmentDetails() {
 
       {Sdata1.map(function (d, idx) {
         return (
-          <AppointmentData
+          <AppointmentDataLauren
             data={d}
-
+          
           />
-
         )
       })}
     </React.Fragment>
@@ -24,6 +23,6 @@ function AppointmentDetails() {
   );
 }
 
-export default AppointmentDetails;
+export default AppointmentDetailsLauren;
 
 

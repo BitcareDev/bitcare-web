@@ -1,0 +1,77 @@
+.reshedule_main {
+    width: 50%;
+    margin: auto;
+    padding: 6px;
+    background-color: #E4F0F0;
+    border-radius: 12px;
+}
+
+.icon {
+    font-size: 60px;
+    color: #02704A;
+}
+
+.icon2 {
+    font-size: 40px;
+    color: #02704A;
+}
+
+input[type=number] {
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 12px;
+    height: 40px;
+    font-size: 14px;
+}
+
+.phone,
+.firstname,
+.lastname,
+.email {
+    width: 40%;
+    cursor: not-allowed;
+}
+
+.phone1 {
+    width: 8%;
+}
+
+.phone2 {
+    width: 8%;
+}
+
+input[type=date] {
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 12px;
+    height: 40px;
+    width: 150px;
+    font-size: 14px;
+}
+
+.time1 {
+    border-radius: 12px;
+    margin-left: 10px;
+}
+
+.time1:focus {
+    background-color: aqua;
+    transition: 0.7s;
+}
+
+.message {
+    width: 50%;
+}
+
+.submit {
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .reshedule_main {
+        width: 95%;
+    }
+
+    .submit {
+        text-align: center;
+        width: 30%;
+    }
+}

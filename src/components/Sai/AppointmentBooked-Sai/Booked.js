@@ -1,125 +1,24 @@
 import React from "react";
 import './Booked.css';
-import { NavLink } from 'react-router-dom';
-
+import CardData1 from "./Card_data1";
+import Sdata from "../../../Sdata";
 
 function Booked() {
-    return (
-        <div class="abcd">
-            <div class="main">
-                <header class="header">
+  return (
 
-                    <h2>Friday, 8:30AM</h2>&nbsp;&nbsp;
-                    <h2>Dec 30</h2>
-                </header>
+    <React.Fragment>
+      <h1 className="heading_style"> Appointment Details</h1>
 
+      {Sdata.map(function (d, idx) {
+        return (
+          <CardData1
+            data={d}
+          />
+        )
+      })}
+    </React.Fragment>
 
-                <div class="image">
-                    <img src="../assets/Victoria.png" className="Victoria" /></div>
-
-                <div class="details">
-                    <h1>Primary Care Visit</h1>
-                    <h2>Annual Physical</h2>
-                    <h3>Dr.Victoria</h3>
-
-
-                    <h5>Texas</h5>        </div>
-
-                <footer class="footer">
-                    <NavLink to='/details'><button class="button5">Show Details</button></NavLink>
-                </footer>
-
-
-            </div>
-            <br></br>
-
-
-            <div class="main2">
-                <header class="header2">
-
-                    <h2>Saturday, 10:30AM</h2>&nbsp;&nbsp;
-                    <h2>Dec 10</h2>
-
-
-
-                </header>
-
-
-                <div class="image2">
-                    <img src="../assets/Lauren.png" className="Lauren2" /></div>
-
-                <div class="details2">
-                    <h1>Acute Care</h1>
-                    <h2>Annual Physical</h2>
-                    <h3>Dr.Lauren</h3>
-
-
-                    <h5>Hensley</h5>        </div>
-
-                <footer class="footer2">
-                    <button>Show Details</button>
-                </footer>
-
-
-            </div>
-
-            <br></br>
-            <div class="main3">
-                <header class="header3">
-
-                    <h2>Friday, 8:30AM</h2>&nbsp;&nbsp;
-                    <h2>Nov 11</h2>
-                    
-                   
-                </header>
-                <h3>Passed</h3>
-
-
-                <div class="details3">
-                    <h1>COVID-19 Testing</h1>
-                    <h2>COVID-19 Screening</h2>
-                    <h3></h3>
-
-
-                    <h5>Texas</h5>        </div>
-
-                <footer class="footer3">
-                    <button class="button6">Show Details</button>&nbsp;&nbsp;&nbsp;&nbsp;
-                    <button class="button7">Another Time</button>
-                </footer>
-
-
-            </div>
-
-            <br></br>
-            <div class="main4">
-                <header class="header4">
-
-                    <h2>Friday, 8:30AM</h2>&nbsp;&nbsp;
-                    <h2>Oct 30</h2>
-                    </header>
-                   <h3>Cancelled</h3>
-
-
-                
-                <div class="details4">
-                    <h1>COVID-19 Test</h1>
-                    <h2>COVID-19 Screening</h2>
-                    <h3></h3>
-
-
-                    <h5>Texas</h5>        </div>
-
-                <footer class="footer4">
-                    <button class="button8">Show Details</button>&nbsp;&nbsp;&nbsp;&nbsp;
-                    <button class="button9">Another Time</button>
-                </footer>
-
-            </div>
-
-        </div>
-
-    );
+  );
 }
 
 export default Booked;
