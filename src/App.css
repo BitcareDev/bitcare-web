@@ -1,0 +1,24 @@
+.App {
+  text-align: center;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Color palette
+ Primary: #02704A
+ Secondary: #E7EDE5
+Typography
+ Font family: Open Sans
+Text color
+ Basic: #353535
+ Hint: #8F9BB3
+ Heading: #02704A
+ Disabled: #8F9BB3
+ White: #FFFFF */

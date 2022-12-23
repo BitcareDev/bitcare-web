@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+}
+
+.flex-container {
+
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+
+}
+
+.flex-container .girl-image {
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+
+.flex-container .girl-image:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  z-index: 1;
+  mix-blend-mode: screen;
+}
+
+.flex-container .girl-image .image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+
+.flex-container .content {
+
+  margin-top: -10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+
+.flex-container .content form {
+  width: 50%;
+  margin-top: -200px;
+}
+
+
+.flex-container .content form h1 {
+
+  font-weight: 300;
+  font-size: 35px;
+  text-transform: uppercase;
+  display: inline-block;
+  letter-spacing: 1px;
+  margin-bottom: -10px;
+}
+
+.flex-container .content form h5 {
+
+  font-weight: 300;
+  margin-bottom: -50px;
+  margin-top: 1px;
+  display: inline-block;
+  letter-spacing: 1px;
+}
+
+
+.flex-container .content form input {
+  margin-bottom: 5px;
+  width: 300px;
+}
+
+.side-content {
+  display: flex;
+  justify-content: center;
+}
+
+.side-content1 {
+  display: inline-flex;
+  font-size: 12px;
+  color: rgb(159, 171, 155);
+  cursor: pointer;
+}
+
+.side-content2 {
+  color: black;
+  margin-left: 5px;
+}
+
+
+
+@media(max-width: 768px) {
+  .flex-container .girl-image {
+    display: none;
+    width: 100%;
+    height: 100%;
+  }
+
+  .flex-container .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  .flex-container .content .form {
+    width: 100%;
+    padding: 100px;
+    background: rgba(221, 186, 186, 0.9);
+    margin: 50px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+}
+
+
+
+.logo {
+  margin-top: 60px;
+  width: 40%;
+}
+
+
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+input[type=email],
+input[type=password],
+input[type=text] {
+  border: 1px solid rgba(0, 0, 0, .2);
+  border-radius: 12px;
+  height: 40px;
+
+
+  font-size: 12px;
+}
+
+h4 {
+  position: relative;
+  font-size: 14px;
+
+  display: flex;
+  justify-content: right;
+  margin: 0;
+  cursor: pointer;
+}
+
+.button1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+button {
+  background: #02704A;
+  border: 1px solid #02704A;
+  border-radius: 20px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 15px;
+  height: 30px;
+  width: 100%;
+  margin-top: 10px;
+}

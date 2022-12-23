@@ -1,0 +1,28 @@
+.passed_heading {
+    background-color: #E4F0f0;
+    width: 50%;
+    margin: auto;
+    padding-left: 50px;
+    border-radius: 12px;
+}
+
+.passed_heading .name,
+.test,
+.date,
+.service,
+.location,
+.status,
+.providerr,
+.amount {
+    font-size: 26px;
+}
+
+.passed_heading .status {
+    color: blue;
+    text-align: center;
+}
+
+.passed_heading .ad {
+    text-align: center;
+    color: black;
+}
