@@ -51,16 +51,16 @@ button#symptom:focus{
     background-color: #2f8b88;
     color: #ffffff;
 }
-.inout-page{
+/* .input-page{
     display: flex;
     justify-content: center;
 }
 .input-text{
     font-size: 20px;
 }
-.input-container{
-    padding-top: 50px;
-    padding-left: 15px;
+.input-page{
+    padding-top: 35px;
+    padding-left: 3px;
 }
 .input-btn{
     padding: 20px 30px 10px 0px;
@@ -71,14 +71,11 @@ button#symptom:focus{
     color: #ffffff;
     border: none;
     float: right;
-}
+} */
 .btn-back{
     border: 1px solid black;
-    cursor: pointer;
-    font-size: 1.5rem;
-    line-height: 2rem;
-    font-weight: 500;
-    text-transform: capitalize;
+    font-size: 24px;
+    line-height: 16px;
 }
 @media (max-width: 987px){
     .btn-button{

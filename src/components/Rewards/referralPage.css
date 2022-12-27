@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Open Sans,sans-serif;
+    overflow: auto;
+}
+.referral-header{
+    margin-top: 20px;
+    color: rgb(55, 65, 81);
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+.sub_header{
+    width: 75%;
+    padding-left: 20px;
+}
+.text-service{
+    font-size: 20px;
+}
+.bg1_container{
+    background-color: rgb(228,240,240);
+    border-radius: 2px;
+    margin-bottom: 20px;
+}
+.bg-referral-bg{
+    max-height: 100%;
+    padding-top: 20px;
+    padding: 10px 20px 20px 20px;
+    display: flex;
+    justify-content: center;
+}
+.bg-referral{
+    background-color: #ffffff;
+    border-radius: 2px;
+    width: 100%;
+    text-align: -webkit-center;
+    height: 450px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.myreferral{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 24px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.referral_row{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+.btn-invite{
+    padding: 20px;
+    text-align: center;
+}
+.invite{
+    padding: 10px 80px;
+    background-color: #2f8b88;
+    color: #ffffff;
+    border: none;
+}
+.g1{
+    background-color: rgb(228,240,240);
+    width: 95%;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+}
+.ref{
+    text-align: center;
+    padding-top: 20px;
+}
+.Referral1{
+    padding-bottom: 20px;
+}
+.Referral2{
+    font-weight: bold;
+}
+.Referral2, .Referral3{
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+.code{
+    padding: 10px;
+    width: 95%;
+    text-align: left;
+    padding-left: 40px;
+    font-size: 20px;
+}
+.input-code{
+    display: flex;
+    background-color: #dbdddf;
+    border-radius: 10px;
+}
+.copy-logo{
+    font-size: 30px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+.gn{
+    width: 100%;
+}
+.referral-btn{
+    width: 100%;
+    border: 1px solid gray;
+    color: #fff;
+    background-color: #2f8b88;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 5px;
+}
+.col-8{
+    padding-top: 15px;
+}

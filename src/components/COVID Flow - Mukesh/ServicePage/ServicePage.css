@@ -7,94 +7,86 @@ body{
     font-family: Open Sans,sans-serif;
     overflow: auto;
 }
-.location-Header{
+.Service-Header{
     margin-top: 20px;
     color: rgb(55, 65, 81);
     font-weight: bold;
     margin-bottom: 20px;
     font-size: 24px;
 }
-.bg_container{
+.bg_container1{
     background-color: rgb(228,240,240);
     border-radius: 2px;
     margin-bottom: 20px;
 }
-.bg-location-bg{
+.bg-Service-bg{
     max-height: 100%;
-    padding: 20px;
+    padding-top: 20px;
+    padding: 10px 20px 20px 20px;
     display: flex;
     justify-content: center;
 }
-.bg_location{
+.bg-Service{
     background-color: #ffffff;
     border-radius: 2px;
-    width: 600px;
+    width: 100%;
 }
-.location-container{
+.btn_container{
+    padding: 20px 30px 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.btn_next{
+    padding: 10px 20px;
+    background-color: #2f8b88;
+    color: #ffffff;
+    border: none;
+}
+.service-container{
     display: flex;
     border: 1px solid rgb(228,240,240);
     margin: 20px;
     border-radius: 2px;
     background-color: rgb(228,240,240);
-    padding: 20px;
     cursor: pointer;
     transition: 1s;
 }
-.location-container:hover{
+.service-container:hover{
     background-color: #2f8b88;
     color: #ffffff;
 }
-.location-content{
+.service-content{
     display: flex;
     justify-content: space-between;
     flex: 1 1 auto;
 }
-.location-text{
-    padding-left: 20px;
-    padding-top: 5px;
-}
-.location-image{
-    padding: 20px 10px;
-    border: 1px solid #ffffff;
-    background-color: #ffffff;
-    border-radius: 2px;
-}
-.Sub-content, .Sub-text{
+.text-header{
     font-size: 20px;
     line-height: 28px;
+    margin-left: 12px;
+    padding-top: 15px;
+    padding-left: 12px;
 }
-.Sub-content{
+.service-text{
+    padding: 20px;
+}
+.service-page{
+    padding: 20px;
+}
+.input-text{
+    font-size: 20px;
     font-weight: bold;
 }
-.Right-icon{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.input-btn{
+    padding: 20px 30px 10px 0px;
 }
-.icon-text{
-    font-size: 30px;
-    line-height: 36px;
-    color: black;
-}
-@media (max-width: 987px){
-    .container{
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    .location-container{
-        flex-direction: column;
-    }
-    .location-image{
-        text-align: center;
-    }
-    .location-text{
-        padding-left: 0px;
-    }
-}
-@media (max-width: 350px){
-    .bg_location{
-        width: 270px;
-    }
+.btn-button{
+    padding: 10px 20px;
+    background-color: #2f8b88;
+    color: #ffffff;
+    border: none;
+    float: right;
 }
 @media (max-width: 600px){
     .Sub-text{
@@ -111,3 +103,10 @@ body{
         width: 100%;
     }  
 }
+@media (max-width: 987px){
+    .container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+

@@ -7,27 +7,26 @@ body{
     font-family: Open Sans,sans-serif;
     overflow: auto;
 }
-.location-Header{
+.Header{
     margin-top: 20px;
     color: rgb(55, 65, 81);
     font-weight: bold;
     margin-bottom: 20px;
     font-size: 24px;
 }
-.bg_container{
+.bg-secondary-bg{
     background-color: rgb(228,240,240);
-    border-radius: 2px;
+    max-height: auto;
+    border-radius: 10px;
+    padding-top: 20px;
     margin-bottom: 20px;
-}
-.bg-location-bg{
-    max-height: 100%;
     padding: 20px;
     display: flex;
     justify-content: center;
 }
-.bg_location{
+.bg-location{
     background-color: #ffffff;
-    border-radius: 2px;
+    border-radius: 10px;
     width: 600px;
 }
 .location-container{
@@ -39,19 +38,33 @@ body{
     padding: 20px;
     cursor: pointer;
     transition: 1s;
+    color: black;
 }
 .location-container:hover{
     background-color: #2f8b88;
     color: #ffffff;
 }
-.location-content{
+.location-disabled{
     display: flex;
-    justify-content: space-between;
-    flex: 1 1 auto;
+    border: 1px solid rgb(228,240,240);
+    margin: 20px;
+    border-radius: 2px;
+    background-color: rgb(228,240,240);
+    padding: 20px;
+    cursor: not-allowed;
 }
 .location-text{
     padding-left: 20px;
     padding-top: 5px;
+}
+.location-text1{
+    padding-left: 20px;
+    padding-top: 5px;
+}
+.location-content{
+    display: flex;
+    justify-content: space-between;
+    flex: 1 1 auto;
 }
 .location-image{
     padding: 20px 10px;
@@ -63,8 +76,8 @@ body{
     font-size: 20px;
     line-height: 28px;
 }
-.Sub-content{
-    font-weight: bold;
+h3{
+    font-weight: bold; 
 }
 .Right-icon{
     display: flex;
@@ -77,11 +90,15 @@ body{
     color: black;
 }
 @media (max-width: 987px){
-    .container{
-        padding-left: 20px;
-        padding-right: 20px;
+    .bg-location{
+        margin-left: 20px;
+        margin-right: 20px;
     }
-    .location-container{
+    .bg-secondary-bg{
+        padding-top: 20px;
+        height: 100%;
+    }
+    .location-container, .location-disabled{
         flex-direction: column;
     }
     .location-image{
@@ -90,16 +107,14 @@ body{
     .location-text{
         padding-left: 0px;
     }
-}
-@media (max-width: 350px){
-    .bg_location{
-        width: 270px;
+    .location-text1{
+        padding-left: 0px;
     }
 }
 @media (max-width: 600px){
     .Sub-text{
         display:inline-block;
-        width: 180px;
+        width:180px;
         white-space: nowrap;
         overflow:hidden !important;
         text-overflow: ellipsis;
@@ -108,6 +123,5 @@ body{
         text-overflow: clip;
         white-space: normal;
         word-break: break-all;
-        width: 100%;
     }  
 }
