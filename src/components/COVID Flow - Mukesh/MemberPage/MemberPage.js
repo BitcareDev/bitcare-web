@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import './MemberPage.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -6,10 +6,25 @@ function Member() {
     const [name, setName] = useState("");
     const [gender, setGender] = useState("");
     const [age, setAge] = useState("");
+    const [file, setFile] = useState([]);
+  const inputFile = useRef(null);
 
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log(name,gender,age)
+    }
+
+    const handleChange = e => {
+        setFile([...file, e.target.files[0]]);
+      }
+
+      function FindAge() {
+        var day = document.getElementById("dob").value;
+        var DOB = new Date(day);
+        var today = new Date();
+        var Age = today.getTime() - DOB.getTime();
+        Age = Math.floor(Age / (1000 * 60 * 60 * 24 * 365.25));
+        document.getElementById("age").value = Age;
     }
     return (
         <div class="container">
@@ -28,11 +43,14 @@ function Member() {
                                 <option value="female">Female</option>
                             </select>
 
+                            <label for="dob" className="label">DOB</label>
+                            <input type="date" id="dob" required/>
+
                             <label for="age" className="label">Age</label>
-                            <input type="number" id="age" placeholder="Enter your age" value={age} required onChange={(e) => setAge(e.target.value)}/>
+                            <input type="number" id="age" onMouseMove={FindAge} placeholder="Enter your age" value={age} required onChange={(e) => setAge(e.target.value)}/>
 
                             <label for="message" className="label">Verification ID</label>
-                            <input type="text" id="message" placeholder="Message(Optional)" />
+                            <input type="file" onChange={handleChange} ref={inputFile} />
 
                             <button className="Submit">Add Details</button>
                         </form>

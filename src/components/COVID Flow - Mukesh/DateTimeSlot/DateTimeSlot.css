@@ -34,7 +34,7 @@ body{
     padding: 20px 20px 0px 20px;
     font-size: 16px;
 }
-input[type=date]{
+#birthday{
     width: 100%;
     border: none;
     padding: 0px 35px;

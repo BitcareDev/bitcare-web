@@ -37,7 +37,7 @@ body{
     border-radius: 2px;
     width: 600px;
 }
-input[type=text], select, [type=number] {
+input[type=text], select, [type=number], [type=file]{
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -63,4 +63,13 @@ input[type=text], select, [type=number] {
   }
   .label{
     color: rgb(17 108 110);
+  }
+  #dob{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
   }
