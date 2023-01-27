@@ -1,10 +1,12 @@
 import React from "react";
+import Webcam from "react-webcam";
 
 export default function App5() {
 
   return (
     <div>
-      <img src="" alt=""/>
+      <h1> open camera </h1>
+      <Webcam/>
     </div>
   );
 }

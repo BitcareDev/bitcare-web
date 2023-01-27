@@ -36,7 +36,7 @@ function DateTime(props) {
 
                     </div>
                     <div className="btn-next">
-                        <NavLink to="/consent"><button className="next">Next <FaArrowRight /></button></NavLink>
+                        <NavLink to="/consent1"><button className="next">Next <FaArrowRight /></button></NavLink>
                     </div>
                 </div>
             </div>

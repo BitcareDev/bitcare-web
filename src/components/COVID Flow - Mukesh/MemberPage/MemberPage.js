@@ -47,7 +47,7 @@ function Member() {
                             <input type="date" id="dob" required/>
 
                             <label for="age" className="label">Age</label>
-                            <input type="number" id="age" onMouseMove={FindAge} placeholder="Enter your age" value={age} required onChange={(e) => setAge(e.target.value)}/>
+                            <input type="number" id="age" onMouseEnter={FindAge} placeholder="Enter your age" value={age} required onChange={(e) => setAge(e.target.value)}/>
 
                             <label for="message" className="label">Verification ID</label>
                             <input type="file" onChange={handleChange} ref={inputFile} />

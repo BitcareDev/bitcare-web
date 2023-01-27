@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import { QrReader } from 'react-qr-reader';
+// import { QrReader } from 'react-qr-reader';
 import './RewardsPage.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Rdata, { Fqdata } from './Rdata';
@@ -47,7 +47,7 @@ function Rewards() {
                     <div className="camView">
                 {isShowVideo &&
                      <>
-                     <QrReader style={{ width: '40%' }} ref={videoElement} onResult={(result, error) => {
+                     {/* <QrReader style={{ width: '100%' }} ref={videoElement} onResult={(result, error) => {
                          if (!!result) {
                            setData(result?.text);
                            setCount([count + 1]); 
@@ -57,7 +57,7 @@ function Rewards() {
                            console.info(error);
                          }
                        }}
-                     />
+                     /> */}
                      <p>{data}</p>
                      <h1>Count={count}</h1>
                    </>

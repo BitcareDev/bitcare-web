@@ -7,7 +7,7 @@ import { AiOutlineArrowLeft } from 'react-icons/ai';
 import { useNavigate } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 
-function Consent() {   
+function Consent01() {   
     let sigPad = useRef({});
     let data = '';
 
@@ -45,4 +45,4 @@ function Consent() {
         </div>
     );
 }
-export default Consent;
+export default Consent01;
