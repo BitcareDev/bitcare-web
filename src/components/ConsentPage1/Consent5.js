@@ -38,7 +38,14 @@ function Consent5(){
             <div className="check_box">
             <label for="chkPassport"><input type="checkbox" id="chkPassport" name="remember"/> Cyanocobalamin (B12)</label>
             </div>
-            <label>Do you have allergic reactions to SULFA <input type="checkbox" id="chkPassport" class="input_name" checked={qtn === "Yes"} onChange={() => setQtn("Yes")}/>Yes <input type="checkbox" id="chkPassport" checked={qtn === "No"} onChange={() => setQtn("No")}/>No</label>
+            <div class="row row-cols-2 row-cols-sm-3 row-cols-md-3 row-cols-lg-3">
+                <div class="col">
+                <label>Do you have allergic reactions to SULFA</label>
+                </div>
+                <div class="col">
+                <label><input type="checkbox" id="chkPassport" class="input_name" checked={qtn === "Yes"} onChange={() => setQtn("Yes")}/>Yes <input type="checkbox" id="chkPassport" checked={qtn === "No"} onChange={() => setQtn("No")}/>No</label>
+                </div>
+            </div>
             <div>*Patients with allergic reactions to SULFA are not recommended to have an intramuscular vitamin injection that consists of methionine in Lipo-B.</div>
             <div>Vitamin injection common side effects include but are not limited to:</div>
             <div><RxDotFilled/> Feeling of pain and a warm sensation at the site of injection</div>

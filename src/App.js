@@ -30,6 +30,7 @@ import List from "./components/ToDoList/ToDoList";
 import Demo1 from "./components/ConsentPage1/demo1";
 import Consent8 from "./components/ConsentPage1/Consent8";
 import Consent9 from "./components/ConsentPage1/Consent9";
+import Consult from "./components/ConsentPage1/Consult";
 
 function App() {
   console.log("In app page");
@@ -53,18 +54,19 @@ function App() {
         <Route exact path="/rewards" element={<Rewards/>} />
         <Route exact path="/referral" element={<Referral/>} />
         <Route exact path="/member" element={<Member/>} />
-        <Route exact path="/consent" element={<Consent/>} />
-        <Route exact path="/consent1" element={<Consent1/>} />
-        <Route exact path="/consent2" element={<Consent2/>} />
-        <Route exact path="/consent3" element={<Consent3/>} />
-        <Route exact path="/consent4" element={<Consent4/>} />
-        <Route exact path="/consent5" element={<Consent5/>} />
-        <Route exact path="/consent6" element={<Consent6/>} />
-        <Route exact path="/consent7" element={<Consent7/>} />
-        <Route exact path="/consent8" element={<Consent8/>} />
-        <Route exact path="/consent9" element={<Consent9/>} />
+        <Route exact path="/clinic" element={<Consent/>} />
+        <Route exact path="/platelet" element={<Consent1/>} />
+        <Route exact path="/dermal" element={<Consent2/>} />
+        <Route exact path="/emsculpt" element={<Consent3/>} />
+        <Route exact path="/cryoskin" element={<Consent4/>} />
+        <Route exact path="/intramuscular" element={<Consent5/>} />
+        <Route exact path="/oxygen" element={<Consent6/>} />
+        <Route exact path="/compression" element={<Consent7/>} />
+        <Route exact path="/hydrafacial" element={<Consent8/>} />
+        <Route exact path="/aspen" element={<Consent9/>} />
         <Route exact path="/todolist" element={<List/>} />
         <Route exact path="/demo1" element={<Demo1/>} />
+        <Route exact path="/consult" element={<Consult/>} />
         {/* <Route index element={<SignUp />} /> */}
         {/* {/* <Route path="blogs" element={<Blogs />} /> */}
         {/* <Route exact path="/signup" element={<SignUp />} /> */}

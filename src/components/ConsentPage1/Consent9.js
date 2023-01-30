@@ -6,6 +6,7 @@ import { RxDotFilled } from 'react-icons/rx';
 import { C6data, C7data } from "./Cdata";
 
 function Consent9() {
+
     const [qtn, setQtn] = useState("");
     const [qtn1, setQtn1] = useState("");
     var [date, setDate] = useState(new Date());

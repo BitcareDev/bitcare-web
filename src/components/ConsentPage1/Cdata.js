@@ -226,6 +226,8 @@ export const C6data = [
         sideText1: "If yes, can you be in the sun for 10 min.without having itchiness, redness, blotchiness or  pigmentation issues?",
     }
 ]
+let unique = C6data.filter((item, id, ar) => ar.indexOf(item) === 1);
+console.log(unique);
 
 export const C7data = [
     {
