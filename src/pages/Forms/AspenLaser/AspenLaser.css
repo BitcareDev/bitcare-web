@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow: auto;
+}
+.container-fluid{
+    padding: 25px 60px 25px 60px;
+  }
+.Bitcare_img2{
+    padding-bottom: 40px;
+    padding-left: 5px;
+}
+.Aspenlaser-header{
+    padding-bottom: 20px;
+}
+.Aspen_header{
+    font-size: 30px;
+    color: #1f403d;
+    font-weight: bold;
+    font-family: 'Rozha One';
+    text-align: center;
+    padding-bottom: 5px;
+}
+.Aspen-content{
+    font-size: 14px;
+    color: #000000;
+    font-family: 'Poppins Light', sans-serif;
+    text-align: justify;
+}
+.Aspen-content1{
+    font-size: 14px;
+    color: #000000;
+    font-family: 'Poppins Light', sans-serif;
+    text-align: justify;
+    background-color: #1f403d;
+    margin-bottom: 25px;
+    padding: 25px;
+    color: #ffffff;
+}
+.Check_box{
+    font-weight: bold;
+    padding-left: 10px;
+}
+.C1{
+    padding-left: 35px;
+}
+.Aspen_subheader{
+    font-size: 20px;
+    color: #1f403d;
+    font-family: 'Poppins Light', sans-serif;
+    padding-bottom: 10px;
+    font-weight: 600;
+}
+input[type="checkbox" i]{
+    accent-color: #0e6d4c;
+}
+.bg_Aspen{
+    background-color: #ffffff;
+    height: 280px;
+    border: 1px solid gray;
+}
+.Aspen_input{
+    padding: 5px 20px;
+    box-sizing: border-box;
+    border: none;
+    background-color: #efe2ea;
+    font-size: 14px;
+    font-family: 'Poppins Light', sans-serif;
+    color: #353535;
+    border-radius: 0px;
+}
+.Aspen_input:focus{
+    outline-color: #1f403d;
+    border: 2px solid #1f403d;
+    box-shadow: none;
+    background-color: #efe2ea;
+    color: #1f403d;
+}
+.Aspen_content2{
+    font-size: 14px;
+    color: #000000;
+    font-family: 'Poppins Light', sans-serif;
+    font-weight: 600;
+}
+.Aspen-header1{
+    font-size: 14px;
+    color: #000000;
+    font-family: 'Poppins Light', sans-serif;
+    background-color: #f8f6f6;
+    padding: 7px 20px;
+    border: none;
+    border-radius: 0px;
+}
+canvas{
+    width: 100%;
+    height: 280px;
+}
+#clear_bttn, #save_bttn{
+    padding: 0.5rem;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid black;
+    transition: 1s;
+    font-family: 'Poppins Light', sans-serif;
+}
+@media (max-width: 987px){
+    .container-fluid{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+@media (min-width: 820px){
+    .Aspen_container{
+        font-size: 20px;
+    }
+}
