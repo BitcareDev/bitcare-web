@@ -1,6 +1,7 @@
+//planning to go with styled components instead css
 import styled from "styled-components";
 
 export const SignInLink = styled.div`
   color: black;
-  margin-left: 10px; // have to revert in next commit
+  margin-left: 5px;
 `;
