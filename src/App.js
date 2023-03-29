@@ -43,8 +43,8 @@ import VIPLHandpiece from "./pages/Forms/V-IPLHandpice/V-IPLHandpiece";
 
 import Member from "./components/COVID Flow - Mukesh/MemberPage/MemberPage";
 
-import Generate from "./components/Generate";
-import ReportTemplate from "./components/Generate";
+// import Generate from "./components/Generate";
+// import ReportTemplate from "./components/Generate";
 
 function App() {
   console.log("In app page");
