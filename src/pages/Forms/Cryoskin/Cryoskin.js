@@ -2,22 +2,50 @@ import React, { useRef, useState, useEffect } from "react";
 import './Cryoskin.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import SignaturePad from 'react-signature-canvas';
+import jsPDF from 'jspdf';
 import { RxDash } from 'react-icons/rx';
 
 function Cryoskin() {
+    const [clientImageURL, setClientImageURL] = useState(null);
+    const generatePdfRef = useRef(null);
     var [date, setDate] = useState(new Date());
 
     useEffect(() => {
         var timer = setInterval(() => setDate(new Date()), 1000)
     });
     const [show, setShow] = useState(false)
-    let sigPad = useRef({});
+
+    //Generate PDF
+    const handleGeneratePdf = () => {
+        const doc = new jsPDF("p", "mm", [1400, 1400]);
+
+        // Adding the fonts.
+        doc.setFont('Inter-Regular', 'normal');
+
+        doc.html(generatePdfRef.current, {
+            async callback(doc) {
+                await doc.save('document');
+            },
+            margin: [35, 20, 35, 10],
+            autoPaging: 'text',
+        });
+    };
+
     let data = '';
 
-    function clear() {
-        sigPad.current.clear();
+    let ClintSigPad = useRef({});
+
+    function ClintClear() {
+        ClintSigPad.current.clear();
     }
+    const ClintTrim = () => {
+        setClientImageURL(ClintSigPad.current.getTrimmedCanvas().toDataURL("image/png"))
+    }
+
     return (
+        <div>
+            <button className="CryoskinGenerate_btn" onClick={handleGeneratePdf}>Generate PDF</button>
+            <div ref={generatePdfRef}>
         <div class="container-fluid mt-3">
             <div className="Bitcare_img1">
                 <img src="../../../assets/Bitcare2.png" alt="main" className="image_info2" />
@@ -168,7 +196,7 @@ function Cryoskin() {
                     <label className="cryoskin_content1">Date:</label>
                 </div>
                 <div class="col-sm-8">
-                    <input type="text1" style={{ fontWeight: 'bold' }} value={date.toLocaleDateString()} class="form-control Hydra_input" />
+                    <input type="text1" style={{ fontWeight: 'bold' }} value={date.toLocaleDateString()} class="form-control cryoskin_input" />
                 </div>
             </div>
             <div class="row mt-3">
@@ -176,23 +204,36 @@ function Cryoskin() {
                     <label className="cryoskin_content1">Client Signature:</label>
                 </div>
                 <div class="col-sm-8">
-                    <div className="bg_cryoskin">
-                        <SignaturePad
-                            ref={sigPad}
-                            penColor="black"
-                        />
-                    </div>
-                    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2">
-                        <div class="col">
-                            <button type="button" id="clear_bttn" onClick={clear}><span class="glyphicon glyphicon-remove" ></span> Clear</button>
-                        </div>
-                        <div class="col">
-                            <button type="submit" id="save_bttn"><span class="glyphicon glyphicon-ok"></span> Save & Continue</button>
-                        </div>
-                    </div>
+                {clientImageURL !== null ? (
+                                <img
+                                    src={clientImageURL}
+                                    alt="my signature"
+                                />
+                            ) : (
+                                <div>
+                                    <div className="bg_VIPL">
+                                        <SignaturePad
+                                            ref={ClintSigPad}
+                                            penColor="black"
+                                            backgroundColor='#ffffff'
+                                        />
+                                    </div>
+
+                                    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2">
+                                        <div class="col">
+                                            <input type="submit" id="clear_bttn" onClick={ClintClear} value="clear" />
+                                        </div>
+                                        <div class="col">
+                                            <input type="submit" id="save_bttn" value="save & continue" onClick={ClintTrim} />
+                                        </div>
+                                    </div>
+                                </div>
+                            )}
                 </div>
             </div>
 
+        </div>
+        </div>
         </div>
     );
 }

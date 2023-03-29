@@ -4,9 +4,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import SignaturePad from 'react-signature-canvas';
 
 function LaserPage5() {
-    function colorFunction() {
-        document.getElementById("DIV").style.backgroundColor = "#2f8b88";
-      }
     var [date, setDate] = useState(new Date());
     let sigPad = useRef({});
     let data = '';
@@ -77,7 +74,7 @@ function LaserPage5() {
                             <td className="fitzpatrick_container1" id="time">Burns sometimes and tans gradually</td>
                             <td className="fitzpatrick_container1" id="time">Rarely burns and tans easily</td>
                             <td className="fitzpatrick_container1" id="time">Rarely burns and skin darkens</td>
-                            <td className="fitzpatrick_container1" id="DIV" onClick={colorFunction}>Never burns</td>
+                            <td className="fitzpatrick_container1" id="time">Never burns</td>
                         </tr>
                     </tbody>
                 </table>

@@ -26,7 +26,7 @@ function DateTime(props) {
                                 return (
                                     <>
                                         <div class="col">
-                                            {doc.timeslot1 ? <button type="button" className="btn-time" id="time">{doc.timeslot1}</button> : ""}
+                                            {doc.timeslot1 ? <div type="button" className="btn-time" id="time">{doc.timeslot1}</div> : ""}
                                         </div>
                                     </>
                                 )

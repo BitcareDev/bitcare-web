@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 body{
-    font-family: Poppins;
     overflow: auto;
 }
 .Member-Header{
@@ -37,7 +36,7 @@ body{
     border-radius: 2px;
     width: 600px;
 }
-input[type=text], select, [type=number], [type=file]{
+input[type=text], select, .Number_cont, [type=file]{
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
