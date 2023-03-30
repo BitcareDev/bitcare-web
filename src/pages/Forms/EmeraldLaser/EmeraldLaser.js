@@ -186,7 +186,7 @@ function EmeraldPage1() {
                                     />
                                 ) : (
                                     <div>
-                                        <div className="bg_Emsculpt">
+                                        <div className="bg_Emerald">
                                             <SignaturePad
                                                 ref={sigPad}
                                                 penColor="black"
