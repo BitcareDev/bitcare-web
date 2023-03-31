@@ -123,42 +123,42 @@ function LaserPage5() {
                     </div>
 
                     <div class="row mt-3">
-                <div class="col-sm-3">
-                    <label className="fitzpatrick_name">Technician Name:</label>
-                </div>
-                <div class="col-sm-8">
-                    <input type="text1" placeholder="Name" class="form-control fitzpatrick_input" />
-                </div>
-            </div>
-            <div class="row mt-3">
-                <div class="col-sm-3">
-                    <label className="fitzpatrick_name">Date:</label>
-                </div>
-                <div class="col-sm-8">
-                    <input type="text1" style={{ fontWeight: 'bold' }} value={date.toLocaleDateString()} class="form-control fitzpatrick_input" />
-                </div>
-            </div>
-            <div class="row mt-3">
-                <div class="col-sm-3">
-                    <label className="fitzpatrick_name">Signature:</label>
-                </div>
-                <div class="col-sm-8">
-                    <div className="bg_fitzpatrick">
-                        <SignaturePad
-                            ref={sigPad}
-                            penColor="black"
-                        />
-                    </div>
-                    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2">
-                        <div class="col">
-                            <button type="button" id="clear_bttn" onClick={clear}><span class="glyphicon glyphicon-remove" ></span> Clear</button>
+                        <div class="col-sm-3">
+                            <label className="fitzpatrick_name">Technician Name:</label>
                         </div>
-                        <div class="col">
-                            <button type="submit" id="save_bttn"><span class="glyphicon glyphicon-ok"></span> Save & Continue</button>
+                        <div class="col-sm-8">
+                            <input type="text1" placeholder="Name" class="form-control fitzpatrick_input" />
                         </div>
                     </div>
-                </div>
-            </div>
+                    <div class="row mt-3">
+                        <div class="col-sm-3">
+                            <label className="fitzpatrick_name">Date:</label>
+                        </div>
+                        <div class="col-sm-8">
+                            <input type="text1" style={{ fontWeight: 'bold' }} value={date.toLocaleDateString()} class="form-control fitzpatrick_input" />
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-sm-3">
+                            <label className="fitzpatrick_name">Signature:</label>
+                        </div>
+                        <div class="col-sm-8">
+                            <div className="bg_fitzpatrick">
+                                <SignaturePad
+                                    ref={sigPad}
+                                    penColor="black"
+                                />
+                            </div>
+                            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2">
+                                <div class="col">
+                                    <button type="button" id="clear_bttn" onClick={clear}><span class="glyphicon glyphicon-remove" ></span> Clear</button>
+                                </div>
+                                <div class="col">
+                                    <button type="submit" id="save_bttn"><span class="glyphicon glyphicon-ok"></span> Save & Continue</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
