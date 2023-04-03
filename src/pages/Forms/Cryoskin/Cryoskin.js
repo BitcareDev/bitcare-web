@@ -211,7 +211,7 @@ function Cryoskin() {
                                 />
                             ) : (
                                 <div>
-                                    <div className="bg_VIPL">
+                                    <div className="bg_Cryoskin">
                                         <SignaturePad
                                             ref={ClintSigPad}
                                             penColor="black"
