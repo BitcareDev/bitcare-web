@@ -219,7 +219,7 @@ function AspenLaser() {
                                 />
                             ) : (
                                 <div>
-                                    <div className="bg_VIPL">
+                                    <div className="bg_Aspen">
                                         <SignaturePad
                                             ref={PatientSigPad}
                                             penColor="black"
@@ -268,7 +268,7 @@ function AspenLaser() {
                                 />
                             ) : (
                                 <div>
-                                    <div className="bg_VIPL">
+                                    <div className="bg_Aspen">
                                         <SignaturePad
                                             ref={GuardianSigPad}
                                             penColor="black"
@@ -317,7 +317,7 @@ function AspenLaser() {
                                 />
                             ) : (
                                 <div>
-                                    <div className="bg_VIPL">
+                                    <div className="bg_Aspen">
                                         <SignaturePad
                                             ref={ProfessionalSigPad}
                                             penColor="black"
