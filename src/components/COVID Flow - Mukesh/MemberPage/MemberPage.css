@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow: auto;
+}
+.Member-Header{
+    margin-top: 20px;
+    color: rgb(55, 65, 81);
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+.Header1{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 600;
+    text-align: center;
+}
+.bg1_container{
+    background-color: rgb(228,240,240);
+    border-radius: 2px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+.bg-member-bg{
+    max-height: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.bg_member{
+    background-color: #ffffff;
+    border-radius: 2px;
+    width: 600px;
+}
+input[type=text], select, .Number_cont, [type=file]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  .Submit {
+    width: 100%;
+    background-color: #2f8b88;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+  }
+  .form{
+    border-radius: 5px;
+    padding: 20px;
+  }
+  .label{
+    color: rgb(17 108 110);
+  }
+  #dob{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }

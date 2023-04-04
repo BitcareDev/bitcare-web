@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow: auto;
+}
+.Service-Header{
+    margin-top: 20px;
+    color: rgb(55, 65, 81);
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+.bg_container1{
+    background-color: rgb(228,240,240);
+    border-radius: 2px;
+    margin-bottom: 20px;
+}
+.bg-Service-bg{
+    max-height: 100%;
+    padding-top: 20px;
+    padding: 10px 20px 20px 20px;
+    display: flex;
+    justify-content: center;
+}
+.bg-Service{
+    background-color: #ffffff;
+    border-radius: 2px;
+    width: 100%;
+}
+.btn_container{
+    padding: 20px 30px 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.btn_next{
+    padding: 10px 20px;
+    background-color: #2f8b88;
+    color: #ffffff;
+    border: none;
+}
+.service-container{
+    display: flex;
+    border: 1px solid rgb(228,240,240);
+    margin: 20px;
+    border-radius: 2px;
+    background-color: rgb(228,240,240);
+    cursor: pointer;
+    transition: 1s;
+}
+.service-container:hover{
+    background-color: #2f8b88;
+    color: #ffffff;
+}
+.service-content{
+    display: flex;
+    justify-content: space-between;
+    flex: 1 1 auto;
+}
+.text-header{
+    font-size: 20px;
+    line-height: 28px;
+    margin-left: 12px;
+    padding-top: 15px;
+    padding-left: 12px;
+}
+.service-text{
+    padding: 20px;
+}
+.service-page{
+    padding: 20px;
+}
+.input-text{
+    font-size: 20px;
+    font-weight: bold;
+}
+.input-btn{
+    padding: 20px 30px 10px 0px;
+}
+.btn-button{
+    padding: 10px 20px;
+    background-color: #2f8b88;
+    color: #ffffff;
+    border: none;
+    float: right;
+}
+@media (max-width: 600px){
+    .Sub-text{
+        display:inline-block;
+        width: 180px;
+        white-space: nowrap;
+        overflow:hidden !important;
+        text-overflow: ellipsis;
+    }
+    .Sub-text:hover{
+        text-overflow: clip;
+        white-space: normal;
+        word-break: break-all;
+        width: 100%;
+    }  
+}
+@media (max-width: 987px){
+    .container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+

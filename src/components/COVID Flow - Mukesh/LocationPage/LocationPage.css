@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow: auto;
+}
+.location-Header{
+    margin-top: 20px;
+    color: rgb(55, 65, 81);
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+.bg_container{
+    background-color: rgb(228,240,240);
+    border-radius: 2px;
+    margin-bottom: 20px;
+}
+.bg-location-bg{
+    max-height: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.bg_location{
+    background-color: #ffffff;
+    border-radius: 2px;
+    width: 600px;
+}
+.location-container{
+    display: flex;
+    border: 1px solid rgb(228,240,240);
+    margin: 20px;
+    border-radius: 2px;
+    background-color: rgb(228,240,240);
+    padding: 20px;
+    cursor: pointer;
+    transition: 1s;
+}
+.location-container:hover{
+    background-color: #2f8b88;
+    color: #ffffff;
+}
+.location-content{
+    display: flex;
+    justify-content: space-between;
+    flex: 1 1 auto;
+}
+.location-text{
+    padding-left: 20px;
+    padding-top: 5px;
+}
+.location-image{
+    padding: 20px 10px;
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+    border-radius: 2px;
+}
+.Sub-content, .Sub-text{
+    font-size: 20px;
+    line-height: 28px;
+}
+.Sub-content{
+    font-weight: bold;
+}
+.Right-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-text{
+    font-size: 30px;
+    line-height: 36px;
+    color: black;
+}
+@media (max-width: 987px){
+    .container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .location-container{
+        flex-direction: column;
+    }
+    .location-image{
+        text-align: center;
+    }
+    .location-text{
+        padding-left: 0px;
+    }
+}
+@media (max-width: 350px){
+    .bg_location{
+        width: 270px;
+    }
+}
+@media (max-width: 600px){
+    .Sub-text{
+        display:inline-block;
+        width: 180px;
+        white-space: nowrap;
+        overflow:hidden !important;
+        text-overflow: ellipsis;
+    }
+    .Sub-text:hover{
+        text-overflow: clip;
+        white-space: normal;
+        word-break: break-all;
+        width: 100%;
+    }  
+}

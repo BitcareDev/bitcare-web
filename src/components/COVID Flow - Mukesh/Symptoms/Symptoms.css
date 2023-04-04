@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow: auto;
+}
+.Symptoms-header{
+    margin-top: 20px;
+    color: rgb(55, 65, 81);
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+.bg-container{
+    background-color: rgb(228,240,240);
+    height: 100%;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.sub-header{
+    font-size: 20px;
+    margin-left: 12px;
+    margin-bottom: 16px;
+    color: rgb(55, 65, 81);
+}
+.bg-page{
+    display: flex;
+    justify-content: center;
+}
+.bg-symptoms{
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+.btn-symptom{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(228,240,240);
+    text-align: left;
+    padding: 12px;
+}
+.btn-symptom:hover{
+    background-color: #2f8b88;
+    color: #ffffff;
+}
+button#symptom:focus{
+    background-color: #2f8b88;
+    color: #ffffff;
+}
+/* .input-page{
+    display: flex;
+    justify-content: center;
+}
+.input-text{
+    font-size: 20px;
+}
+.input-page{
+    padding-top: 35px;
+    padding-left: 3px;
+}
+.input-btn{
+    padding: 20px 30px 10px 0px;
+}
+.btn-button{
+    padding: 10px 20px;
+    background-color: #2f8b88;
+    color: #ffffff;
+    border: none;
+    float: right;
+} */
+.btn-back{
+    border: 1px solid black;
+    font-size: 24px;
+    line-height: 16px;
+}
+@media (max-width: 987px){
+    .btn-button{
+        float: left;
+        margin-top: 20px;
+    }
+}

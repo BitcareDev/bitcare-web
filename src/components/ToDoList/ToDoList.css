@@ -1,0 +1,121 @@
+.list-item{
+    display: flex;
+    margin: 20px 0;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.list{
+    width: 70%;
+    background-color: rgb(228,240,240);
+    border: none;
+    color: #000;
+    font-size: 20px;
+    padding-left: 10px;
+    margin-right: 15px;
+}
+
+.button-complete, .button-delete, .button-edit{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 28px;
+    border-radius: 50%;
+}
+
+.button-complete{
+    color: #ff6c6c;
+    margin-right: 10px;
+}
+
+.button-edit{
+    color: #e2d029;
+    margin-right: 10px;
+}
+
+.button-delete{
+    color: ligh;
+}
+.complete{
+    text-decoration-style: solid;
+    text-decoration-line: line-through;
+    text-decoration-color: #ff6c6c;
+    opacity: 0.6;
+}
+.add-container{
+    background-color: rgb(228,240,240);
+    border-radius: 2px;
+    margin-bottom: 20px;
+}
+.bg-wrapper{
+    max-height: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.bg-wrapper1{
+    background-color: #ffffff;
+    border-radius: 2px;
+    width: 60%;
+}
+.head-container{
+    border: 1px solid rgb(228,240,240);
+    margin: 20px;
+    border-radius: 2px;
+    background-color: rgb(228,240,240);
+    padding: 20px;
+    cursor: pointer;
+    transition: 1s;
+}
+.header1 h1{
+    color: #000;
+    text-align: center;
+    margin: 30px 0;
+}
+.task-input{
+    outline: none;
+    width: 77%;
+    padding: 10px;
+    margin-right: 25px;
+    font-size: 20px;    
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #2f8b88;
+    border-radius: 10px;
+}
+.add_button{
+    width: 16%;
+    padding: 10px 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 0;
+    background-color: #2f8b88;
+    color: #fff;
+    cursor: pointer;
+}
+.list-item{
+    display: flex;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #fff;
+}
+@media (max-width: 987px){
+    .container1{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .bg-wrapper1{
+        width: 100%;
+    }
+    .task-input{
+        width: 60%;
+    }
+    .add_button{
+        width: 27%;
+    }
+}
