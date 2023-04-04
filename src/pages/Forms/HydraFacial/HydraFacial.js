@@ -172,7 +172,7 @@ function HydraFacial() {
                         <div className="Hydra1_content">Please check all that apply:</div>
                     </div>
 
-                    <div className="facial">
+                    <div className="facial_Hydra">
                         <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-3">
                             <div class="col check_facial">
                                 <label><input type="checkbox" /> Active Acne</label>
