@@ -56,9 +56,9 @@ body{
     padding-bottom: 10px;
     font-weight: 600;
 }
-input[type="checkbox" i]{
+/* input[type="checkbox" i]{
     accent-color: #0e6d4c;
-}
+} */
 .bg_Aspen{
     background-color: #ffffff;
     height: 280px;

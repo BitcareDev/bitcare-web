@@ -72,7 +72,7 @@ strong{
     background-color: #2f8b88;
     color: #ffffff;
 }
-input[type=checkbox]{
+/* input[type=checkbox]{
     accent-color: #0e6d4c;
     height: 15px;
     width: 15px;
@@ -80,7 +80,7 @@ input[type=checkbox]{
     padding: 15px;
     margin-right: 7px;
     margin-top: 3px;
-}
+} */
 .bold{
     text-decoration: underline;
 }

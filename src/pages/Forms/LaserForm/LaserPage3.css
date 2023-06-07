@@ -5,9 +5,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+/* body{
     overflow: auto;
-}
+} */
 .container-fluid{
     padding: 25px 60px 25px 60px;
   }
@@ -62,9 +62,6 @@ body{
     box-shadow: none;
     background-color: #efe2ea;
     color: #1f403d;
-}
-.Laserform{
-    padding-left: 20px;
 }
 .Laser_content{
     font-size: 14px;
@@ -128,12 +125,12 @@ body{
     font-family: 'Poppins Light', sans-serif;
     text-align: center;
 }
-.table{
+.table1{
     text-align: center;
 }
-tr, .th1, .fitzpatrick_container1{
+/* tr, .th1, .fitzpatrick_container1{
     border: 5px solid #000000;
-}
+} */
 .fitzpatrick_subcontent{
     border: 5px solid #efe2ea;
     padding: 20px;
@@ -184,6 +181,10 @@ tr, .th1, .fitzpatrick_container1{
     transition: 1s;
     font-family: 'Poppins Light', sans-serif;
 }
+canvas{
+    width: 100%;
+    height: 250px;
+}
 @media (max-width: 987px){
     .container-fluid{
         padding-left: 20px;
@@ -193,9 +194,6 @@ tr, .th1, .fitzpatrick_container1{
 @media (min-width: 820px){
     .Laser_container{
         font-size: 20px;
-    }
-    .bg_Laser{
-        height: 370px;
     }
 }
 button#time1:focus{

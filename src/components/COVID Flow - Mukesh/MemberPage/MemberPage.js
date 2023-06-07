@@ -35,7 +35,7 @@ function Member() {
                     <div className="bg_member">
                         <form action="/action_page.php" className="form" onSubmit={handleSubmit}>
                             <label for="fname" className="label">Full Name</label>
-                            <input type="text" id="fname" name="firstname" placeholder="Enter your name" required value={name} onChange={(e) => setName(e.target.value)} />
+                            <input type="text" id="fname" className="Forms-input" name="firstname" placeholder="Enter your name" required value={name} onChange={(e) => setName(e.target.value)} />
 
                             <label for="country" className="label">Gender</label>
                             <select id="country" name="country" value={gender} required onChange={(e) => setGender(e.target.value)}>
@@ -44,13 +44,13 @@ function Member() {
                             </select>
 
                             <label for="dob" className="label">DOB</label>
-                            <input type="date" id="dob" required/>
+                            <input type="date" id="dob" className="Forms-input" required/>
 
                             <label for="age" className="label">Age</label>
                             <input type="number" className="Number_cont" id="age" onMouseEnter={FindAge} placeholder="Enter your age" value={age} required onChange={(e) => setAge(e.target.value)}/>
 
                             <label for="message" className="label">Verification ID</label>
-                            <input type="file" onChange={handleChange} ref={inputFile} />
+                            <input type="file" onChange={handleChange} ref={inputFile} className="Forms-input"/>
 
                             <button className="Submit">Add Details</button>
                         </form>
