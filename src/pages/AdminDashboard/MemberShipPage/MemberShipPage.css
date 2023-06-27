@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.membership_container {
+    padding: 20px 40px;
+}
+
+.membership_content {
+    background-color: #f2f2f2;
+    padding: 5% 20%;
+}
+
+.membership_form {
+    padding: 20px;
+}
+
+.membership_input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.Membership_desc {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.MemberShipAdd_Btn {
+    padding: 12px;
+    border: none;
+    background-color: #1f403d;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: 400;
+    width: 100%;
+}
+
+.Add_desc {
+    padding-top: 30px;
+}
+
+.MemberShipSubmit_Btn {
+    width: 100%;
+    background-color: #1f403d;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+}

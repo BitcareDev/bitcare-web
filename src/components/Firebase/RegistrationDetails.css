@@ -1,0 +1,66 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.Bg_details{
+    background-color: #F5F5F5;
+    padding: 50px;
+}
+
+.Header_details{
+    padding-bottom: 10px;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.details_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.Customers_button{
+    padding: 12px 24px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #11342d;
+    font-weight: 400;
+    border: none;
+    border-radius: 5px;
+}
+
+.tableDetails_Container{
+    overflow-x: auto;
+}
+
+.table_details {
+    width: 100%;
+    background-color: #ffffff;
+    white-space: nowrap;
+}
+
+.tableRow_details {
+    border-bottom: 1px solid #ebeaea;
+    box-shadow: 0 1px 6px 1px rgba(69, 65, 78, 0.1);
+    line-height: 30px;
+}
+
+.tableHead_details,
+.tableData_details {
+    text-align: left;
+    padding: 8px;
+    font-size: 16px;
+}
+
+.input_search{
+    background-image: url('../../../../public/assets/searchIcon.png');
+    background-size: 25px;
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    width: 100%;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+ */

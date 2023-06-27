@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.list_container {
+    background-color: #F5F5F5;
+    padding: 50px;
+}
+
+.header_list {
+    padding-bottom: 10px;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.Header_Container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.File_button {
+    display: inline-block;
+    background-color: #11342d;
+    border-radius: 10px;
+    color: #ffffff;
+    text-align: center;
+    padding: 8px;
+    width: 100px;
+    transition: all 0.5s;
+}
+
+.Customers_button{
+    padding: 12px 24px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #11342d;
+    font-weight: 400;
+    border: none;
+    border-radius: 5px;
+}
+
+.table_container {
+    overflow-x: auto;
+}
+
+.table_list {
+    width: 100%;
+    background-color: #ffffff;
+    white-space: nowrap;
+}
+
+.row_list {
+    border-bottom: 1px solid #ebeaea;
+    box-shadow: 0 1px 6px 1px rgba(69, 65, 78, 0.1);
+    line-height: 30px;
+}
+
+.table_head,
+.table_data {
+    text-align: left;
+    padding: 8px;
+    font-size: 16px;
+    font-family: 'Open Sans';
+}
+
+.profile_img {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.Search_filter {
+    background-image: url('../../../../public/assets/searchIcon.png');
+    background-size: 25px;
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    width: 100%;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.import_field{
+    padding: 5px 12px;
+    margin-right: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.upload_file{
+    padding-top: 5px;
+}
+
+.Button_container {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.Details_btn{
+    background-color: #11342d;
+    color: #ffffff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.pagination_container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.pagination_container li {
+    list-style-type: none;
+}
+
+.pagination_container li a {
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+    background-color: gray;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.customer_modal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .customer_content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 45%;
+    height: 65%;
+    text-align: justify;
+    overflow-y: auto;
+  }
+
+  .close_modalbtn{
+    float: right;
+    border: none;
+    background-color: #ffffff;
+    font-size: 30px;
+  }
+
+  .modal_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #736c6c;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .table_content{
+    overflow-x: auto;
+  }
+
+ .table_details{
+    border-collapse: collapse;
+    width: 100%;
+    white-space: nowrap;
+ }
+
+ .details_content{
+    padding: 3px;
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Open Sans';
+ }
+ 
+ .back_button{
+    border: 1px solid black;
+    font-size: 24px;
+    line-height: 16px;
+}
+
+@media (max-width: 768px) {
+    .list_container {
+        padding: 30px;
+    }
+    .customer_content{
+        width: 90%;
+    }
+}
+
+@media (max-width: 540px) {
+    .Header_Container {
+        display: block;
+    }
+    .Customers_button{
+        margin-top: 10px;
+        width: 100%;
+    }
+    .upload_file{
+        width: 50%;
+    }
+    .Button_container{
+        padding: 10px 0px;
+    }
+}
+
+@media (min-width:769px) and (max-width:1024px) {
+    .customer_content{
+        width: 90%;
+    }
+  }
+
+
